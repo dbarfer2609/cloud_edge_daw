@@ -3,9 +3,26 @@
 ## 🅰️ Tarea A — Niveles de cloud (IaaS/PaaS/SaaS)
 Crea una tabla con 10 servicios reales. Incluye enlace oficial y justifica responsabilidades.
 
-| Servicio | Proveedor | Nivel (IaaS/PaaS/SaaS) | Enlace oficial | ¿Qué gestiona el proveedor? | ¿Qué gestiona el equipo/usuario? |
-|---------|----------|-------------------------|----------------|-----------------------------|----------------------------------|
-|         |          |                         |                |                             |                                  |
+| **Servicio**           | **Proveedor** | **Nivel**      | **Enlace oficial**                                                                                                           | **¿Qué gestiona el proveedor?**                    | **¿Qué gestiona el equipo/usuario?**                                      |
+| ---------------------- | ------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------- |
+| Amazon EC2             | AWS           | IaaS           | [https://aws.amazon.com/ec2/](https://aws.amazon.com/ec2/)                                                                   | Hardware, red, virtualización| SO, middleware, apps, datos ([Wikipedia][1])                              |
+| Azure Virtual Machines | Microsoft     | IaaS           | [https://azure.microsoft.com/en-us/services/virtual-machines/](https://azure.microsoft.com/en-us/services/virtual-machines/) | Infraestructura (servidores, red, almacenamiento)  | Sistema operativo, apps, datos ([CloudZero][2])                           |
+| Google Compute Engine  | Google Cloud  | IaaS           | [https://cloud.google.com/compute](https://cloud.google.com/compute)                                                         | Infraestructura física y virtualización            | OS, apps y datos ([CloudZero][2])                                         |
+| AWS S3                 | AWS           | IaaS (Storage) | [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)                                                                     | Gestión de infraestructura de almacenamiento       | Organización de datos, permisos de acceso ([CloudZero][2])                |
+| Google App Engine      | Google Cloud  | PaaS           | [https://cloud.google.com/appengine/](https://cloud.google.com/appengine/)                                                   | Plataforma runtime, balanceo, escalado automático  | Código de app, configuración lógica ([Wikipedia][3])                      |
+| Azure SQL Database     | Microsoft     | PaaS           | [https://azure.microsoft.com/en-us/products/azure-sql/](https://azure.microsoft.com/en-us/products/azure-sql/)               | Base de datos gestionada, parches, backups         | Esquema, consultas, datos de negocio ([Wikipedia][4])                     |
+| AWS Elastic Beanstalk  | AWS           | PaaS           | [https://aws.amazon.com/elasticbeanstalk/](https://aws.amazon.com/elasticbeanstalk/)                                         | Plataforma de despliegue, escalado y runtime       | Código de la app, configuración de despliegue ([ICS][5])                  |
+| Google Workspace       | Google        | SaaS           | [https://workspace.google.com/](https://workspace.google.com/)                                                               | App, mantenimiento, seguridad y datos básicos      | Uso de apps, gestion deusuarios, datos de organización ([Stackscale][6]) |
+| Salesforce CRM         | Salesforce    | SaaS           | [https://www.salesforce.com/](https://www.salesforce.com/)                                                                   | App CRM completa, infraestructura, actualizaciones | Configuración de workflows, datos CRM ([Stackscale][6])                   |
+| Microsoft 365          | Microsoft     | SaaS           | [https://www.microsoft.com/microsoft-365](https://www.microsoft.com/microsoft-365)                                           | Aplicaciones completas, actualizaciones, seguridad | Gestión de usuarios, datos, políticas internas ([Stackscale][6])          |
+
+[1]: https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud?utm_source=chatgpt.com "Amazon Elastic Compute Cloud"
+[2]: https://www.cloudzero.com/blog/cloud-service-providers/?utm_source=chatgpt.com "21+ Top Cloud Service Providers Globally In 2025"
+[3]: https://en.wikipedia.org/wiki/Google_App_Engine?utm_source=chatgpt.com "Google App Engine"
+[4]: https://en.wikipedia.org/wiki/Microsoft_Azure_SQL_Database?utm_source=chatgpt.com "Microsoft Azure SQL Database"
+[5]: https://ics.com.es/informatica/20-ejemplos-de-paas-plataforma-como-servicio/?utm_source=chatgpt.com "20 Ejemplos de PaaS (Plataforma como Servicio) - ICS"
+[6]: https://www.stackscale.com/es/blog/modelos-de-servicio-cloud/?utm_source=chatgpt.com "Modelos de servicio cloud: IaaS, PaaS y SaaS"
+
 
 ## 🅱️ Tarea B — Funciones principales de cloud (arquitectura)
 Incluye un diagrama (ASCII/Mermaid/imagen) y una explicación breve.
