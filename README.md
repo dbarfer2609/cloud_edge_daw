@@ -28,16 +28,64 @@ Crea una tabla con 10 servicios reales. Incluye enlace oficial y justifica respo
 Incluye un diagrama (ASCII/Mermaid/imagen) y una explicación breve.
 
 ### Diagrama
-(Pega aquí el diagrama)
-
+```
+  |Usuario|
+      |
+      v
+  |Aplicación (web/app)|
+      |
+      v
+  |Servidor en la nube|
+      |
+  +------------------+
+  |                  |
+|Base de datos|   |Almacenamiento|
+      |
+   |Copia de
+   seuridad|
+```
 ### Explicación (8–12 líneas)
 (Describe el flujo front → API → BBDD/storage y dónde entra la cloud)
 
+Cuando un usuario usa una aplicación, primero interactúa con el front (la parte que ve en su navegador o móvil).
+El front envía las solicitudes a la API, que es como un intermediario que sabe cómo hablar con la base de datos y el almacenamiento.
+La API procesa la información y pide datos a la base de datos (donde se guardan cosas como usuarios, contraseñas o pedidos) o al almacenamiento (para fotos, archivos o vídeos).
+La cloud entra aquí porque todo esto no está en tu ordenador, sino en servidores por internet que la empresa alquila.
+Esos servidores se encargan de que la app funcione 24/7, que los datos estén seguros y que se pueda acceder desde cualquier lugar.
+Si hay muchos usuarios a la vez, la cloud permite que se añadan más servidores para que la app no se caiga.
+Además, hace copias de seguridad automáticamente por si algo falla.
+Así, tú como programador solo te preocupas de la app y los datos, y la cloud gestiona la infraestructura y la disponibilidad.
+
 ### Mapeo de funciones cloud a componentes (mínimo 3)
-- Procesamiento → …
-- Ejecución → …
-- Almacenamiento → …
-- Intercambio → … (opcional si ya tienes 3)
+
+Procesamiento → Servidores en la nube
+Los servidores hacen los cálculos y ejecutan la lógica de la aplicación cuando los usuarios hacen solicitudes.
+
+Ejecución → Aplicación / API
+La app o la API se encarga de recibir lo que pide el usuario y enviar las respuestas adecuadas.
+
+Almacenamiento → Base de datos y almacenamiento en la cloud
+Aquí se guardan los datos de los usuarios, archivos, imágenes, vídeos y copias de seguridad.
+
+Intercambio → Red / Internet (opcional)
+Permite que el front del usuario y la API se comuniquen a través de la nube de manera segura y rápida.
 
 ## 📚 Fuentes (enlaces oficiales)
 (Enlaces oficiales usados en la tabla A y en la B)
+
+### Tabla A — Servicios Cloud
+- **Amazon EC2 (IaaS)**: [https://aws.amazon.com/ec2/](https://aws.amazon.com/ec2/)  
+- **Azure Virtual Machines (IaaS)**: [https://azure.microsoft.com/en-us/services/virtual-machines/](https://azure.microsoft.com/en-us/services/virtual-machines/)  
+- **Google Compute Engine (IaaS)**: [https://cloud.google.com/compute](https://cloud.google.com/compute)  
+- **AWS S3 (Almacenamiento IaaS)**: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)  
+- **Google App Engine (PaaS)**: [https://cloud.google.com/appengine](https://cloud.google.com/appengine)  
+- **Azure SQL Database (PaaS)**: [https://azure.microsoft.com/en-us/products/azure-sql/](https://azure.microsoft.com/en-us/products/azure-sql/)  
+- **AWS Elastic Beanstalk (PaaS)**: [https://aws.amazon.com/elasticbeanstalk/](https://aws.amazon.com/elasticbeanstalk/)  
+- **Google Workspace (SaaS)**: [https://workspace.google.com/](https://workspace.google.com/)  
+- **Salesforce CRM (SaaS)**: [https://www.salesforce.com/](https://www.salesforce.com/)  
+- **Microsoft 365 (SaaS)**: [https://www.microsoft.com/microsoft-365](https://www.microsoft.com/microsoft-365)  
+
+### Tarea B — Arquitectura / funciones cloud
+- **Qué es Cloud Computing (Microsoft)**: [https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/)  
+- **Google Cloud - Introducción a App Engine**: [https://cloud.google.com/appengine/docs](https://cloud.google.com/appengine/docs)  
+- **Conceptos básicos de IaaS, PaaS y SaaS**: [https://stackscale.com/es/blog/modelos-de-servicio-cloud/](https://stackscale.com/es/blog/modelos-de-servicio-cloud/)
