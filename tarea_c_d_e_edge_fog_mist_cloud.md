@@ -68,12 +68,35 @@ Incluye mínimo 3 ventajas (recomendado 5), con explicación + ejemplo.
    Explicación: Los datos están disponibles desde cualquier dispositivo con Internet.
    Ejemplo: Controlar una casa inteligente desde el móvil.
 
-3) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+3) Ventaja: Almacenamiento de datos
+   Explicación: La Cloud puede guardar muchos datos durante mucho tiempo.
+   Ejemplo: Guardar datos de sensores durante años.
+
+4) Ventaja: Menor coste
+   Explicación: No hace falta comprar servidores propios.
+   Ejemplo: Se paga solo por lo que se usa cada mes.
+   
+5) Ventaja: Seguridad y copias de seguridad automáticas
+
+   Explicación: La Cloud suele incluir medidas de seguridad avanzadas y realiza copias de seguridad automáticas de los datos. Esto protege la información frente a fallos del hardware, pérdidas o ataques.
+   Ejemplo: Si un sensor industrial falla y borra datos, la información ya está respaldada en la Cloud y se puede recuperar fácilmente.   
 
 **Fuente oficial (mín. 1):**
-- ...
+- Microsoft Azure
 
 ## 📚 Fuentes (enlaces oficiales)
 (Recopila aquí todos los enlaces oficiales usados)
+Google Cloud
+https://cloud.google.com/distributed-cloud/edge
+
+Microsoft Azure
+https://learn.microsoft.com/azure/architecture/guide/architecture-styles/edge-computing
+
+Red Hat
+https://www.redhat.com/en/topics/edge-computing
+
+Intel
+https://www.intel.com/content/www/us/en/edge-computing/overview.html
+
+Cisco
+https://www.cisco.com/c/en/us/solutions/what-is-edge-computing.html
