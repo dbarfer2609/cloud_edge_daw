@@ -33,6 +33,7 @@ El propio sensor hace pequeñas tareas como filtrar datos o detectar eventos sim
 Solo envía información cuando es necesario.
 
 **Esquema (ASCII o Mermaid recomendado):**
+'''
 Sensores
    ↓
   Mist
@@ -43,23 +44,23 @@ Sensores
    ↓
  Cloud
 
+'''
 
 **Zonas de aplicación (qué hace cada capa):**
-- Mist → ...
-- Edge → ...
-- Fog → ...
-- Cloud → ...
-
+- Mist → Filtra datos simples y ahorra energía.
+- Edge → Toma decisiones rápidas en tiempo real.
+- Fog → Junta datos de varios Edge y los procesa.
+- Cloud → Guarda datos y hace análisis grandes.
 ## 🅴 Tarea E — Ventajas de la Cloud en sistemas conectados
 Incluye mínimo 3 ventajas (recomendado 5), con explicación + ejemplo.
 
-1) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+1) Ventaja: Escalabilidad
+   Explicación: La Cloud permite aumentar o reducir recursos fácilmente.
+   Ejemplo: Una aplicación puede crecer sin comprar nuevos servidores.
 
-2) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+2) Ventaja: Acceso desde cualquier lugar
+   Explicación: Los datos están disponibles desde cualquier dispositivo con Internet.
+   Ejemplo: Controlar una casa inteligente desde el móvil.
 
 3) Ventaja: ...
    Explicación: ...
