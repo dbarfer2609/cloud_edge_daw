@@ -33,18 +33,24 @@ El propio sensor hace pequeñas tareas como filtrar datos o detectar eventos sim
 Solo envía información cuando es necesario.
 
 **Esquema (ASCII o Mermaid recomendado):**
-'''
-Sensores
-   ↓
-  Mist
-   ↓
-  Edge
-   ↓
-  Fog
-   ↓
- Cloud
+```
++------------+
+|  Sensores  |
++------------+
+       |
+     (Mist)
+       |
++------------+
+|    Edge    |
++------------+
+       |
+     (Fog)
+       |
++------------+
+|   Cloud    |
++------------+
+```
 
-'''
 
 **Zonas de aplicación (qué hace cada capa):**
 - Mist → Filtra datos simples y ahorra energía.
